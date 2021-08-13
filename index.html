@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ご利用アンケート</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- グリッドシステムの使用。「row」は行という意味を表す -->
+      <div class="row">
+        <!-- 1行で12個分のカラムを格納できる(6 + 6で分けている) -->
+        <div class="col-sm-6">
+          <h1>Usage Questionnaire</h1>
+        </div>
+        <div class="col-sm-6 text-right">
+          <a href="/">Back To Home</a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+    <hr>
+
+    <div class="container">
+      <form action="" method="post" class="row">
+        <!-- 12個のカラムの8を要素にあまりの4をoffsetで両端の余白に2ずつ取る -->
+        <div class="col-sm-8 offset-sm-2">
+          <p>Thank you for using this manual. We apologize for the inconvenience, but we would appreciate it if you could fill out and submit the form below.</p>
+          <p>この度は、本書をご利用頂きありがとうございます。恐れ入りますが、以下のフォームにご記入頂き、送信していただけると幸いです。</p>
+
+          <div class="form-group">
+            <label for="name">Name（お名前）<span class="badge badge-danger">Mandatory（必須）</span></label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="例） John Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="job">Job（ご職業）</label>
+            <select id="job" name="job" class="form-control">
+              <option value="">Please Choose（選択してください）</option>
+              <option value="会社員">Worker（会社員）</option>
+              <option value="学生">Student（学生）</option>
+              <option value="その他">Other（その他）</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>What you want to know (multiple selections are possible)</label>
+            <label>知りたい内容（複数選択可）</label>
+            <div class="form-check">
+              <input type="checkbox" name="q1" id="q1_1" value="html" class="form-check-input">
+              <label for="q1_1" class="form-check-label">HTML（ハイパーテキストマークアップランゲージ）</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="q1" id="q1_2" value="css" class="form-check-input">
+              <label for="q1_2" class="form-check-label">CSS（カスケーディングスタイルシート）</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="q1" id="q1_3" value="javascript" class="form-check-input">
+              <label for="q1_3" class="form-check-label">JavaScript（ジャバスクリプト）</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>How is your understanding?（理解度はいかがですか？）</label>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="q2" id="q2_1" value="1">
+              <label for="q2_1" class="form-check-label">I couldn't understand（理解できなかった）</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="q2" id="q2_2" value="2">
+              <label for="q2_2" class="form-check-label">I could understand（だいたい理解できた）</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="q2" id="q2_3" value="3">
+              <label for="q2_3" class="form-check-label">I understand（理解できた）</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="q2" id="q2_4" value="">
+              <label for="q2_4" class="form-check-label">Do not answer（回答しない）</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Opinion（ご意見）</label>
+            <textarea name="message" id="message" rows="10" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send（送信する）</button>
+        </div>
+      </form>
+    </div>
+
+    <hr>
+
+  <div class="container">
+    <footer>
+      <p>&copy; AltaDenaStudio</p>
+    </footer>
+  </div>
+</body>
+</html>
