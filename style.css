@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+
+header {
+  margin-top: 30px;
+  color: darkturquoise;
+}
+
+hr {
+  border-width: 3px;
+  border-color: darkturquoise;
+  margin: 30px 0;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 特定のクラスの直下の要素全てにスタイルを適用する */
+.form-group>label {
+  font-weight: bold;
+}
+
+/* フォントの設定 */
+h1 {
+  font-family: 'WindSong', cursive;
+}
+
+a {
+  font-family: 'WindSong', cursive;
+}
+
+span {
+  font-family: 'WindSong', cursive;
+}
+
+input {
+  font-family: 'WindSong', cursive;
+}
+
+select {
+  font-family: 'WindSong', cursive;
+}
+
+label {
+  font-family: 'WindSong', cursive;
+}
+
+textarea {
+  font-family: 'WindSong', cursive;
+}
+
+button {
+  font-family: 'WindSong', cursive;
+}
+
+.container p {
+  font-family: 'WindSong', cursive;
+}
